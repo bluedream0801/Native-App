@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/actionBarUser"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/userBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="UserPanel"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/qrCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Share with QrCode :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@id/actionBarUser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <RadioGroup
+            android:id="@+id/qrRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@id/qrCodeText"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/qrEnableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/qrDisableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Disable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/lightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Setting :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/qrRadioGroup"/>
+        <RadioGroup
+            android:id="@+id/lightRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@id/lightTextView"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/lightEnableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/lightDisableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Disable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/flashTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash Setting :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/lightRadioGroup"/>
+        <RadioGroup
+            android:id="@+id/flashRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@id/flashTextView"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/flashEnableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/flashDisableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Disable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/printTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share To Printer Setting :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/flashRadioGroup"/>
+        <RadioGroup
+            android:id="@+id/printRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@id/printTextView"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/printEnableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/printDisableRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Disable"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</ScrollView>

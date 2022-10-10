@@ -1,0 +1,13 @@
+at start screen "start.png" when you press the screen it says
+
+READY - and count down from 3 sec and show 3..2..1
+
+When the picture is taken, it show the ok-selfie.png (green tumb) in right side, and the red tumb in left side
+If you press the green tumb ig says OK - and go back to main streen where you press to start.
+If you press the red tumb it have to re-name the photo with s or put it in a special folder named "deleted" so it still stored, and the app have to go back to READY and start counting 5..4..3..2..1 - for retaking the photo 
+
+So all the picture is stored, buth them where pepole press the red dislike tumb, have to be renamed with a letter first or in a seperately folder.
+
+If theres is no press in 10 sec. it is stored like if they press the green buttom.
+
+In the buttom of the app in left side it have to show logo "app buttom.png"

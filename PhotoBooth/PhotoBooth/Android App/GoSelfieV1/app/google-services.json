@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "932163176389",
+    "project_id": "goselfie-54e9b",
+    "storage_bucket": "goselfie-54e9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932163176389:android:de3e47d77191390c236dac",
+        "android_client_info": {
+          "package_name": "com.yousefelsayed.goselfie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932163176389-s07f9h79ha7kj3ipovl5p2rl6dv2g4si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSmldjBWDJEmx_-DtkRj6lsK0kOWzseOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932163176389-s07f9h79ha7kj3ipovl5p2rl6dv2g4si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
